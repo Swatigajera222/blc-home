@@ -746,7 +746,7 @@ p {
   color: #fff;
 }
 
-.mainBtn3 {
+.mainBtn-asd {
   height: 35px;
   transition: 0.4s !important;
   background: #00c15e;
@@ -763,6 +763,32 @@ p {
   width: 138px;
   margin: auto;
 }
+.mainBtn-asd:hover {
+  color: #fff;
+  background-color: #265501;
+}
+.mainBtn-asd:focus {
+  color: #fff;
+}
+.mainBtn3 {
+  height: 36px;
+  transition: 0.4s !important;
+  background: #3f8109;
+  border: solid 0px #fff;
+  font-size: 12px !important;
+  color: #fff;
+  letter-spacing: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
 .mainBtn3:hover {
   color: #fff;
   background-color: #265501;
@@ -770,7 +796,9 @@ p {
 .mainBtn3:focus {
   color: #fff;
 }
-
+.mainBtn3:focus {
+  color: #0061cd;
+}
 .mainBtn4 {
   height: 34px;
   transition: 0.4s !important;
@@ -794,7 +822,7 @@ p {
   color: #0061cd;
   background-color: #fff;
 }
-.mainBtn3:focus {
+.mainBtn-asd:focus {
   color: #0061cd;
 }
 
@@ -1066,7 +1094,7 @@ p {
 .header .nav-item .nav-link {
   color: #000;
 }
-.header .nav-item .nav-link i{
+.header .nav-item .nav-link i {
   font-size: 12px;
   margin-left: 2px;
 }
@@ -2894,6 +2922,41 @@ ul.gallery {
 /* achivment-Section */
 .achivment-video h3 {
   color: #c22031;
+}
+.banner-inner-section {
+  padding: 12px;
+}
+.banner-inner-section .banner-text {
+  text-align: center;
+}
+.banner-inner-section .banner-text h3 span {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ff3c3c;
+  border-bottom: 1px solid #000;
+}
+.banner-inner-section .banner-text .text-inner-list p {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #1a46aa;
+  margin-top: 33px;
+}
+.banner-inner-section .banner-text button {
+  width: 200px;
+  height: 50px;
+  background: #1a46aa;
+  border-radius: 5px;
+  margin-top: 46px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+}
+.banner-inner-section .banner-text .offile-text {
 }
 @media screen and (max-width: 767px) {
   .social-fixed p {
