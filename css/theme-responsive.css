@@ -204,7 +204,7 @@
 }
 @media (min-width: 576px) and (max-width: 991px) {
   .owl-theme .owl-nav [class*="owl-"] {
-    position: unset;
+    position: relative;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {

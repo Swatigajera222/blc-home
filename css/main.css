@@ -694,11 +694,11 @@ p {
 }
 
 .mainBtn {
-  height: 42px;
+  height: 40px;
   transition: 0.4s !important;
-  background: #0078fd;
+  background: #1a46aa;
   border: solid 0px #fff;
-  font-size: 15px !important;
+  font-size: 20x !important;
   color: #fff;
   letter-spacing: 0;
   padding-top: 0;
@@ -874,21 +874,24 @@ p {
 }
 
 .topbar {
-  padding: 5px 0;
+  padding: 3px 0;
   margin: 0;
   position: relative;
   background-color: #0061cd;
 }
 .topbar ul.topmenu {
-  padding: 9px 0;
+  padding: 0px;
   margin: 0;
 }
 .topbar ul.topmenu li {
   display: inline-block;
-  padding-right: 20px;
-  font-weight: 500;
+  padding-right: 40px;
+  font-weight: 400;
   color: #000;
-  font-size: 14px;
+  font-size: 13px;
+}
+.topbar ul.topmenu li:last-child {
+  padding-right: 0px;
 }
 .topbar ul.topmenu li a {
   color: #fff;
@@ -896,6 +899,9 @@ p {
 .topbar ul.topmenu li a:hover {
   color: #fff;
   opacity: 0.5;
+}
+.topbar ul.topmenu li a img {
+  margin-right: 4px;
 }
 .topbar .marqueeTxt {
   padding: 0;
@@ -909,7 +915,12 @@ p {
 .topbar .btn {
   margin-top: 3px;
 }
-
+.navbar {
+  padding: 10px;
+}
+.navbar .navbar-brand {
+  padding: 0px;
+}
 .navbar-toggler {
   background-color: #7eb444;
   border: none;
@@ -923,16 +934,11 @@ p {
 }
 
 .social-fixed {
-  padding: 0 0;
-  margin: 0;
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 30%;
   z-index: 99;
-  width: 40px;
-  background-color: #333;
-  height: 120px;
-  margin-top: -60px;
+  margin: 0px;
 }
 .social-fixed ul {
   margin: 0px;
@@ -968,19 +974,33 @@ p {
 }
 .social-fixed .right-text {
   background-color: #1a46aa;
-  transform: rotate(180deg);
+  display: block;
+  overflow: hidden;
   width: 40px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 25px;
+  padding: 22px 7px;
 }
-.social-fixed p {
-  transform: rotate(270deg);
+.social-fixed .free-study {
+  background-color: #c22031;
+  padding: 11px 7px;
+}
+.social-fixed span {
   color: #fff;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  display: inline-block;
+  vertical-align: top;
+  /* transform: translate(0, 100%) rotate(-90deg); */
+  transform-origin: 0 0;
+  white-space: nowrap;
+  transform: rotate(90deg);
+  margin-left: 25px;
+}
+.social-fixed span:after {
+  content: "";
+  float: left;
+  margin-top: 100%;
 }
 .button-fixed {
   padding: 0 0;
@@ -1083,21 +1103,22 @@ p {
   padding-top: 15px;
 }
 .header .navbar-brand img {
-  max-width: 220px;
+  max-width: 140px;
 }
 .header .navbar-nav {
   margin-top: 0px;
   margin-bottom: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .header .nav-item {
-  font-size: 16px;
-  font-weight: 500;
-  color: #000;
-  padding-right: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0c439f;
+  padding-right: 15px;
 }
 .header .nav-item .nav-link {
-  color: #000;
+  color: #0c439f;
+  padding: 0px;
 }
 .header .nav-item .nav-link i {
   font-size: 12px;
@@ -1357,14 +1378,15 @@ p {
 
 .features-section {
   position: relative;
-  background: radial-gradient(
+  /* background: radial-gradient(
     100% 376.38% at 0% 0%,
     #fefbf7 0%,
     rgba(254, 251, 247, 0) 100%
-  );
+  ); */
+  padding: 40px 0px 60px;
 }
 .features-section .features-left h2 {
-  font-weight: 700;
+  font-weight: 100;
   font-size: 70px;
   line-height: 78px;
   text-align: center;
@@ -1378,7 +1400,7 @@ p {
   font-size: 75px;
   font-weight: 700;
   color: #c22031;
-  margin-bottom: 10px;
+  margin-bottom: -5px;
   margin-top: 20px;
 }
 .features-section .features-inner p {
@@ -1690,23 +1712,28 @@ ul.list-2 li:before {
 }
 
 .enquiry-form {
-  background-color: #0061cd;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: rgb(0, 97, 205);
-  background: radial-gradient(100% 1314.83% at 0% 0%, #1a46aa 0%, #c22031 100%);
-  /* background-image: url(../img/form-banner.jpg);
+  background-image: url(..//img/learning-center.png);
+  background-position: center;
   background-size: cover;
-  background-position: right; */
+  background-repeat: no-repeat;
+  padding: 50px 0px 55px 0px;
 }
 .enquiry-form h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.enquiry-form h4 {
   color: #fff;
   font-weight: 700;
   font-size: 25px;
   line-height: 38px;
   text-align: center;
+  margin-bottom: 25px;
 }
-
 .courses-area {
   padding: 50px 0;
   position: relative;
@@ -2676,6 +2703,9 @@ ul.gallery {
 .footer ul li {
   padding: 0px;
   color: #000;
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
 }
 .footer ul li a {
   color: #000;
@@ -2696,7 +2726,7 @@ ul.gallery {
   font-size: 15px;
   font-family: "Quattrocento-Regular";
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 0px;
   width: 90%;
 }
 
@@ -2712,7 +2742,7 @@ ul.gallery {
 
 /* branch-section */
 .branch-section {
-  padding: 50px 0px 40px 0px;
+  padding: 80px 0px;
 }
 .branch-section img {
   width: 100%;
@@ -2723,7 +2753,7 @@ ul.gallery {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 32px 0px 5px 0px;
+  padding: 48px 0px 64px 0px;
 }
 .blog-main-section h3 {
   font-weight: 500;
@@ -2765,8 +2795,11 @@ ul.gallery {
   height: 70px;
 }
 /* achivment-Section */
+.achivment-video {
+  padding: 48px 0px 64px 0px;
+}
 .achivment-video h3 {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 25px;
   line-height: 28px;
   color: #c22031;
@@ -2782,22 +2815,25 @@ ul.gallery {
 }
 .banner-inner-section .banner-text {
   text-align: center;
+  width: 80%;
+  margin: auto;
 }
-.banner-inner-section .banner-text h3 span {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
-  color: #ff3c3c;
-  border-bottom: 1px solid #000;
-}
-.banner-inner-section .banner-text .text-inner-list p {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 33px;
+.banner-inner-section .banner-text h3 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 55px;
   text-align: center;
-  color: #1a46aa;
-  margin-top: 33px;
+  color: #1b4fa5;
+  font-family: "Quattrocento-Regular";
+}
+.banner-inner-section .banner-text p {
+  font-size: 25px;
+  line-height: 38px;
+  text-align: center;
+  color: #c22031;
+  margin-top: 23px;
   margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
 }
 .banner-inner-section .banner-text button {
   width: 200px;
@@ -2811,36 +2847,16 @@ ul.gallery {
   font-size: 25px;
   line-height: 38px;
 }
-.banner-inner-section .banner-text .offile-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: #000;
-}
-.banner-inner-section .banner-text .banner-last {
-  text-align: start;
-}
-.banner-inner-section .banner-text .banner-last a {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: #000000;
-  text-decoration: underline;
-}
-.banner-inner-section .banner-text .banner-last p {
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 33px;
-  text-align: center;
-  color: #c22031;
-  margin-bottom: 0px;
-}
-.banner-inner-section .banner-text .banner-last p span {
-  color: #000;
+.banner-inner-section .bank-banner {
+  text-align: end;
 }
 /* table-section */
 .table-section {
-  padding: 30px 0px;
+  padding: 48px 0px;
+  background-image: url(..//img/learning-center.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .table-section .table-head {
   text-align: center;
@@ -2850,16 +2866,15 @@ ul.gallery {
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
-  color: #c22031;
-  margin-bottom: 5px;
+  color: #fff;
+  margin-bottom: 0px;
 }
 .table-section .table-head p {
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
-  color: #1a46aa;
-  width: 46%;
-  margin: auto;
+  color: #fff;
+  margin-bottom: 0px;
 }
 .table thead th {
   border: none;
@@ -2870,31 +2885,22 @@ ul.gallery {
   font-size: 22px;
   line-height: 33px;
   text-align: center;
-  color: #000000;
+  color: #fff;
 }
-.table-box .table-box-head tr .first-title {
-  text-align: start;
+.table-box .table-box-head tr th span {
   font-weight: 700;
-  font-size: 22px;
-  line-height: 33px;
-  color: #c22031;
-  text-decoration: underline;
-  text-decoration-color: #000000b2;
-  text-underline-offset: 8px;
+  border: 1px solid #c22031;
+  padding: 3px 6px;
 }
 .table-box tbody {
-  background: radial-gradient(
-    100% 119.4% at 0% 0%,
-    #fdf9f2 0%,
-    rgba(253, 249, 242, 0) 94.3%
-  );
+  color: #fff;
 }
 .table-box tbody tr td {
   font-weight: 400;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   width: 33.33%;
   padding: 10px 0px;
 }
@@ -2902,24 +2908,25 @@ ul.gallery {
   background: #1a46aa;
   border-radius: 5px;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 38px;
   color: #ffffff;
   padding: 6px 40px;
+  margin-top: 15px;
 }
 .table td,
 .table th {
-  border-top: 0.5px solid #000000bf;
+  border-top: 0.5px solid #c22031;
 }
 .table-box tbody .first-body-table td {
   border-top: none;
 }
 .table-box tbody tr td:nth-child(2) {
-  border-left: 1px solid #000000bf;
-  border-right: 1px solid #000000bf;
+  border-left: 1px solid #c22031;
+  border-right: 1px solid #c22031;
 }
 .table-box tbody .last-btn {
-  border-bottom: 1px solid #000000bf;
+  border-bottom: none;
 }
 /* Want Free Demo? */
 .banner-contact-section {
@@ -2961,6 +2968,10 @@ ul.gallery {
   line-height: 0px;
   color: #ffffff;
   margin-bottom: 0px;
+}
+/* book-call-section */
+.book-call-section {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .book-call-section .book-call-inner {
   display: flex;
@@ -3028,7 +3039,10 @@ ul.gallery {
 /* download-section */
 .download-section {
   padding: 15px 0px;
-  /* background: #f5f5f5; */
+  background: #ffffff;
+  border: 1px solid #c22031;
+  /* margin: 5px 0px; */
+  margin: 16px 0px;
 }
 .download-section .download-app {
   display: flex;
@@ -3053,13 +3067,208 @@ ul.gallery {
 .download-section .download-app .app-text .app-wrap h3 {
   font-weight: 700;
   font-size: 30px;
-  line-height: 45px;
+  line-height: 40px;
   margin-bottom: 0px;
   color: #c22031;
   width: 80%;
 }
 .download-section .download-app .app-text .app-wrap img {
-  width: 143px;
+  width: 153px;
+}
+/* Tabs-section */
+.Tabs-section {
+  padding: 50px 0px;
+}
+.tabs {
+  width: 100%;
+}
+.tabs__navigation {
+  display: flex;
+  justify-content: center;
+  padding: 34px 0px;
+}
+.tabs__navigation:hover .tool-tabs__tab.active {
+  color: #000;
+  font-weight: 400;
+  background-color: #c8c8c8;
+}
+.tabs__navigation:hover .tool-tabs__tab.active:after {
+  width: 0;
+}
+.tabs__navigation:hover .tool-tabs__tab:hover.active {
+  color: #000;
+  font-weight: 500;
+}
+.tabs__navigation:hover .tool-tabs__tab:hover.active:after {
+  width: 100%;
+}
+.tabs__btn {
+  position: relative;
+  /* flex: 0 1 50%; */
+  padding: 9px 39px;
+  margin: 0px 10px;
+  color: #000;
+  transition: color 0.2s;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #c22031;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  border-radius: 0px;
+}
+.tabs__btn.active {
+  background: #c22031;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+.tabs__btn:hover {
+  background: #c22031;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+.tabs__body {
+  display: none;
+}
+.tabs__body.active {
+  display: block;
+}
+.tabs__content .exam-details-box h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 0px;
+  color: #c22031;
+}
+
+.tabs__content .exam-details-box .details-box button {
+  /* width: calc(19.2% - 0px); */
+  width: 19%;
+  height: 40px;
+  margin: 0px 3px 0px 3px;
+  background: #ffffff;
+  border: 1px solid #c22031;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  margin-top: 8px;
+}
+.tabs__content .exam-details-box .details-box button:hover {
+  background: #c22031;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+.tabs__content .exam-details-box .details-box button:last-child {
+  margin-right: 0px;
+}
+.tabs__content .exam-details-box h4 {
+  margin-top: 35px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #c22031;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+  margin-bottom: 20px;
+}
+.tabs__content .exam-details-box .table {
+  border: none;
+}
+.tabs__content .exam-details-box .table tr th {
+  border: 0.5px solid red;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+  padding: 10px 0px;
+}
+/* Our Comprehensive Books for Bank Exam */
+.books-bank {
+  background-image: url(..//img/learning-center.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 32px 0px;
+}
+.books-bank h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #c22031;
+  text-underline-offset: 8px;
+  font-family: "Quattrocento-Regular";
+  margin-bottom: 35px;
+}
+.books-bank .books-img {
+  padding-bottom: 35px;
+}
+.books-bank .books-img img {
+  width: 100%;
+}
+/* Our Approach */
+.approach-section {
+  background-image: url(..//img/learning-center.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0px 100px 0px;
+}
+.approach-section h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #c22031;
+  text-underline-offset: 8px;
+  font-family: "Quattrocento-Regular";
+  margin-bottom: 40px;
+}
+.approach-section .approach-inner {
+  display: flex;
+  justify-content: center;
+}
+.approach-section .approach-inner .approach-box {
+  position: relative;
+  text-align: center;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  margin: 0px 10px;
+}
+.approach-section .approach-inner .approach-box::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/Polygon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  top: 0;
+}
+.approach-section .approach-inner .approach-box p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-family: Inter;
+  margin-top: 40px;
 }
 /* course-section */
 .course-section {
@@ -3118,7 +3327,7 @@ ul.gallery {
   font-size: 15px;
   line-height: 20px;
   color: #ffffff;
-  text-align: start;
+  /* text-align: start; */
   min-height: 80px;
 }
 .course-section .course-wrap .course-box button {
@@ -3143,7 +3352,7 @@ ul.gallery {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 0px 55px 0px;
+  padding: 48px 0px 64px 0px;
 }
 .learning-center h2 {
   font-weight: 700;
@@ -3163,13 +3372,14 @@ ul.gallery {
   height: 75px;
 }
 .learning-center .learning-inner h3 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #ffffff;
   margin-top: 8px;
   margin-bottom: 9px;
   font-family: "Quattrocento-Regular";
+  line-height: 1.4;
 }
 .learning-center .learning-inner p {
   font-weight: 500;
@@ -3180,13 +3390,16 @@ ul.gallery {
   font-family: "Quattrocento-Regular";
   width: 80%;
 }
+.learning-center .learning-last {
+  margin-top: 56px;
+}
 /* Testimonials start here */
 .testimonials-section {
   background-image: url(..//img/learning-center.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 0px 55px 0px;
+  padding: 48px 0px 64px 0px;
 }
 .testimonials-section h3 {
   font-weight: 700;
@@ -3205,7 +3418,7 @@ ul.gallery {
   background-color: gray;
   color: #fff;
   padding: 15px;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 30px;
   position: relative;
 }
@@ -3234,7 +3447,7 @@ ul.gallery {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   color: #fdb808;
 }
 .profile-blog .blog-profile-text p {
@@ -3244,7 +3457,25 @@ ul.gallery {
   margin-bottom: 0px;
   color: rgba(255, 255, 255, 0.723);
 }
-@media screen and (max-width: 767px) {
+.social-icon ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+}
+.social-icon ul li {
+  padding: 0px 8px;
+}
+.social-icon ul li i {
+  font-size: 20px;
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .learning-center .learning-inner p {
+    width: 100%;
+  }
+  .features-section {
+    padding: 30px;
+  }
   .features-section .features-left h2 {
     font-size: 50px;
     line-height: 48px;
@@ -3252,6 +3483,57 @@ ul.gallery {
   }
   .features-section .features-inner {
     padding-right: 0px;
+  }
+  .course-section {
+    padding: 60px 0px 60px 0px;
+  }
+  .banner-inner-section .bank-banner {
+    display: none;
+  }
+  .banner-inner-section {
+    padding: 15px 15px 40px 15px;
+  }
+  .table-box .table-box-head tr th {
+    padding: 25px 0px;
+    font-size: 18px;
+  }
+  .table-box tbody tr td {
+    font-size: 16px;
+    padding: 8px 0px;
+  }
+  .table-box tbody tr td button {
+    font-size: 20px;
+    padding: 2px 30px;
+  }
+  .tabs__navigation {
+    width: 100%;
+  }
+  .tabs__content .exam-details-box .details-box button {
+    width: auto;
+  }
+  .tabs__content .exam-details-box .table tr th {
+    font-size: 18px;
+  }
+  .tabs__content .exam-details-box .details-box button {
+    font-size: 16px;
+  }
+  .tabs__btn {
+    padding: 3px 27px;
+    margin: 0px 6px;
+    font-size: 18px;
+  }
+  .download-section .download-app .app-text .app-wrap h3 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+  .download-section .download-app .app-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .learning-center .learning-inner {
+    text-align: center;
   }
   .download-section .download-app .app-text .app-wrap h3 {
     font-size: 22px;
@@ -3288,11 +3570,8 @@ ul.gallery {
   .download-section .download-app .app-text .app-wrap {
     display: block;
   }
-  .social-fixed p {
+  .social-fixed span {
     font-size: 15px;
-  }
-  .social-fixed .right-text {
-    height: 100px;
   }
   .blog-section .blog-box h3 {
     font-size: 17px !important;
@@ -3316,6 +3595,11 @@ ul.gallery {
   .features-section .features-inner h2 {
     font-size: 50px;
     line-height: 40px;
+    margin-bottom: 8px;
+  }
+  .course-section .course-wrap .course-box::before {
+    content: "";
+    height: 430px;
   }
   .features-section .features-inner p {
     font-size: 16px;
@@ -3336,13 +3620,97 @@ ul.gallery {
   .blog-section .blog-box p {
     font-size: 15px;
   }
+  .approach-section .approach-inner {
+    flex-wrap: wrap;
+  }
+  .approach-section .approach-inner .approach-box {
+    width: 260px;
+    height: 310px;
+  }
+  .approach-section .approach-inner .approach-box::before {
+    width: 100%;
+    height: 300px;
+  }
+  .approach-section .approach-inner .approach-box p {
+    margin-top: 0px;
+  }
+  .table-box .table-box-head tr th span {
+    border: none;
+    padding: 0px;
+  }
+  .table-box .table-box-head tr th {
+    padding: 15px 0px 20px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .table-box tbody tr td {
+    font-size: 14px;
+    padding: 5px 0px;
+  }
+  .table-section .table-head h3 {
+    font-size: 25px;
+  }
+  .table-section .table-head p {
+    font-size: 18px;
+  }
+  .book-call-section .book-call-inner .book-left h3 {
+    font-size: 30px;
+  }
+  .book-call-section .book-call-inner .book-left h1 {
+    font-size: 40px;
+  }
+  .book-call-section .book-call-inner .book-right p {
+    font-size: 18px;
+  }
+  .book-call-section .book-call-inner {
+    display: block;
+  }
+  .book-call-section .book-call-inner .book-wrap {
+    width: 100%;
+  }
+  .tabs__navigation {
+    flex-wrap: wrap;
+    align-items: self-end;
+    justify-content: start;
+    padding: 0px 0px 30px 0px;
+  }
+  .tabs__btn {
+    padding: 0px;
+    margin: 0px 6px;
+    font-size: 18px;
+    width: 100% !important;
+  }
+  .tabs__content .exam-details-box .details-box button {
+    font-size: 14px;
+  }
+  .tabs__content .exam-details-box .table tr th {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 525px) {
+  .course-section .course-wrap .course-box {
+    padding: 90px 30px;
+    width: 70%;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 525px) {
+  .table-section .table-head h3 {
+    font-size: 21px;
+    line-height: 30px;
+  }
   .course-section .course-wrap .course-box {
-    padding: 90px 40px;
+    height: 440px;
   }
   .download-section .download-app {
     display: block;
+    text-align: center;
+  }
+  .branch-section {
+    padding: 50px 0px;
+  }
+  .course-section h3 {
+    text-align: center;
   }
   .download-section .download-app .app-img {
     width: 80px;
@@ -3350,5 +3718,33 @@ ul.gallery {
   }
   .download-section .download-app .app-text p {
     margin-top: 20px;
+  }
+  .table-box tbody tr td button {
+    font-size: 16px;
+    padding: 2px 10px;
+  }
+  .banner-inner-section {
+    padding: 35px 15px 40px 15px;
+  }
+  .banner-inner-section .banner-text p {
+    font-size: 20px;
+  }
+  .banner-inner-section .banner-text h3 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .approach-section {
+    padding: 50px 0px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .course-section .course-wrap .course-box {
+    padding: 40px 20px 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 377px) {
+  .course-section .course-wrap .course-box {
+    height: 420px;
   }
 }
