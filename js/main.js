@@ -16,6 +16,24 @@ $(window).scroll(function () {
 
 /*******************************************************************************************/
 
+let counterup = document.querySelectorAll(".counter_up");
+let convert = Array.from(counterup);
+convert.map((counteritem) => {
+  let counter = 1000;
+  function count() {
+    counter++;
+    counteritem.innerHTML = counter;
+    if (counter == counteritem.dataset.number) {
+      clearInterval(timing);
+    }
+  }
+  let timing = setInterval(() => {
+    count();
+  }, counteritem.dataset.speed / counter);
+});
+
+/*******************************************************************************************/
+
 const tabs = document.querySelectorAll(".tabs__btn");
 const tabsContent = document.querySelectorAll(".tabs__body");
 

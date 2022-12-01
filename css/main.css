@@ -979,6 +979,7 @@ p {
   width: 40px;
   line-height: 25px;
   padding: 22px 7px;
+  cursor: pointer;
 }
 .social-fixed .free-study {
   background-color: #c22031;
