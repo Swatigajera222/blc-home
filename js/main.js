@@ -16,20 +16,24 @@ $(window).scroll(function () {
 
 /*******************************************************************************************/
 
-let counterup = document.querySelectorAll(".counter_up");
-let convert = Array.from(counterup);
-convert.map((counteritem) => {
-  let counter = 1000;
-  function count() {
-    counter++;
-    counteritem.innerHTML = counter;
-    if (counter == counteritem.dataset.number) {
-      clearInterval(timing);
+const counters = document.querySelectorAll(".value");
+const speed = 200;
+
+counters.forEach((counter) => {
+  const animate = () => {
+    const value = +counter.getAttribute("akhi");
+    const data = +counter.innerText;
+
+    const time = value / speed;
+    if (data < value) {
+      counter.innerText = Math.ceil(data + time);
+      setTimeout(animate, 1);
+    } else {
+      counter.innerText = value;
     }
-  }
-  let timing = setInterval(() => {
-    count();
-  }, counteritem.dataset.speed / counter);
+  };
+
+  animate();
 });
 
 /*******************************************************************************************/

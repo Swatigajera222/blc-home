@@ -557,6 +557,7 @@ p {
   -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
   -moz-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
   box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
+  background-color: #f5f8fa;
 }
 .form-control::-webkit-input-placeholder {
   color: #1f1f1f;
@@ -1405,7 +1406,7 @@ p {
   margin-top: 20px;
 }
 .features-section .features-inner h2 span {
-  font-size: 75px;
+  font-size: 100px;
   margin-left: -25px;
 }
 .features-section .features-inner p {
@@ -1724,7 +1725,7 @@ ul.list-2 li:before {
   padding: 50px 0px 55px 0px;
 }
 .enquiry-form h3 {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: 700;
   font-size: 30px;
   line-height: 38px;
@@ -1732,7 +1733,7 @@ ul.list-2 li:before {
   margin-bottom: 0px;
 }
 .enquiry-form h4 {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: 700;
   font-size: 25px;
   line-height: 38px;
